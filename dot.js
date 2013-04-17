@@ -2,17 +2,20 @@
 {
   $.fn.loadingdots = function( options )
   {
-    var settings = $.extend( {}, { dots: 3, duration : 100 }, options );
-    var i = 0;
+    var settings, i;
+    settings = $.extend( {}, { duration : 100 }, options );
+    i = 0;
 
     return this.each( function()
     {
-      var dots = $( this ).html( '<span class="dot"></span><span class="dot"></span><span class="dot"></span>' ).find( '.dot' );
-      dots.each( bucle );
+      $( this )
+        .html( '<span class="dot"></span><span class="dot"></span><span class="dot"></span>' )
+        .find( '.dot' )
+        .each( bucle );
     });
 
     function bucle() {
-      var $el = $( this ), cycle;
+      var $el = $( this ), cycle, timing;
       timing = i * settings.duration;
       i++;
       (cycle = function() {
@@ -22,6 +25,5 @@
               .fadeTo( 'slow', 0, cycle );
       })();
     }
-
   };
 })(jQuery);

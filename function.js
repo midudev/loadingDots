@@ -1,3 +1,3 @@
 $( function() {
-	$( '#loadingdots' ).loadingdots();
+	$( '#loadingdots' ).loadingdots({ dots : 5 });
 });
