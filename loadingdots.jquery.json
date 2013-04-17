@@ -1,6 +1,6 @@
 {
     "name": "loadingdots",
-    "title": "jQuery Loading Dots",
+    "title": "Loading Dots",
     "description": "jQuery plugin to show a set of three loading dots for ajax request",
     "keywords": [
         "loading",
