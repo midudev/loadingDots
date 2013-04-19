@@ -2,18 +2,26 @@
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,p,blockquote,a,code,em,img,small,strong,sub,sup,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figure,figcaption,footer,header,menu,nav,section,summary,time,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote{quotes:none}blockquote:before,blockquote:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 html, body {
-  width: 880px;
+  width: 550px;
   display: block;
   margin: 40px auto 0px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 p {
-  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 15px;
+  margin-bottom: 25px;
+  line-height: 23px;
 }
 
 code {
-
+  background: #272822;
+  display: block;
+  padding: 15px;
+  font-family: 'Inconsolata', 'Consolas', 'Termina', sans-serif;
+  color: #f0f0f0;
+  margin-bottom: 15px;
+  font-size: 14px;
 }
 
 .dot {
@@ -26,4 +34,22 @@ code {
   -moz-border-radius: 5px;
   border-radius: 5px;
   opacity: 0;
+}
+
+h1 {
+  font-size: 24px;
+  display: block;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  display: block;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
 }
